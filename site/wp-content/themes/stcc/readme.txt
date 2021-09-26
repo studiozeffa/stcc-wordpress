@@ -1,4 +1,4 @@
-=== stcc ===
+=== St Christopher's Church ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -10,11 +10,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called stcc.
+A starter theme called St Christopher's Church.
 
 == Description ==
 
-Description
+A theme for St. Christopher's Church, Brislington.
 
 == Installation ==
 
