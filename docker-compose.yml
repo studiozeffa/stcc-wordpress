@@ -16,7 +16,9 @@ services:
   wordpress:
     depends_on:
       - db
-    image: wordpress:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: stcc_wordpress_site
     volumes:
       - ./site:/var/www/html
