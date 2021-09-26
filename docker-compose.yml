@@ -3,6 +3,7 @@ version: "3.9"
 services:
   db:
     image: mysql:5.7
+    container_name: stcc_wordpress_db
     volumes:
       - db_data:/var/lib/mysql
     restart: always
@@ -16,15 +17,30 @@ services:
     depends_on:
       - db
     image: wordpress:latest
+    container_name: stcc_wordpress_site
     volumes:
       - ./site:/var/www/html
     ports:
-      - "8000:80"
+      - 7822:80
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
+
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin:latest
+    container_name: stcc_wordpress_phpmyadmin
+    ports:
+      - 7833:80
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
 volumes:
   db_data: {}

@@ -51,7 +51,7 @@ Temporary Items
 ### WordPress ###
 
 # Configuration
-/sitewp-config.php
+/site/wp-config.php
 
 # Example themes
 /site/wp-content/themes/twenty*/
