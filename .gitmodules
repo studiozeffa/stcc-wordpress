@@ -1,0 +1,3 @@
+[submodule "site/wp-content/themes/stcc-endurance"]
+	path = site/wp-content/themes/stcc-endurance
+	url = https://github.com/st-christophers/stcc-endurance-theme
