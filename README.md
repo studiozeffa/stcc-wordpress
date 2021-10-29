@@ -10,4 +10,4 @@ The site is developed using Docker containers. Make sure you have Docker install
 docker compose up
 ```
 
-The site will then be available at http://localhost:7822/.
+The site will then be available at http://localhost:7822/. Log in to the Wordpress admin pages at http://localhost:7822/wp-admin.
